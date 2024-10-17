@@ -121,6 +121,10 @@ hr {
   gap: 1rem;
 }
 
+.input-field{
+  text-decoration: none;
+}
+
 .input-container input {
   width: 100%;
   flex: 1;

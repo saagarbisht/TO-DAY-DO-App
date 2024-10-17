@@ -8,6 +8,7 @@ export default function TodoInput({ handleAddTodo }) {
         type="text"
         placeholder="Add task"
         value={inputValue}
+        className="input-field"
         onChange={(e) => {
           setInputValue(e.target.value);
         }}
