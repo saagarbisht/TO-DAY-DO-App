@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
 
-export default function Header({todos}) {
+export default function Header({ todos }) {
+  const openTodos = todos.filter((todo) => !todo.complete).length
   return (
     <header>
-      <h1 className='text-gradient'>You have {todos.length} open {todos.length ? "tasks" : "task"}.</h1>
+      <h1 className="text-gradient">
+        You have {openTodos} open 
+        {openTodos ? " tasks " : " task "}.
+      </h1>
     </header>
-  )
+  );
 }
